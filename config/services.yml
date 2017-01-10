@@ -1,0 +1,19 @@
+services:
+    push.controller:
+        class: imkingdavid\push\controller\push
+        arguments:
+            - '@template.twig.environment'
+            - '@request'
+            - '@config'
+            - '@dbal.conn'
+            - '%core.table_prefix%'
+
+    push.listener:
+        class: imkingdavid\push\event\listener
+        arguments:
+            - '@config'
+            - '@template'
+            - '@user'
+            - '@controller.helper'
+        tags:
+            - { name: event.listener }

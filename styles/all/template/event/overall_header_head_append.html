@@ -1,0 +1,13 @@
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase-messaging.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "{PUSH_FIREBASE_API_KEY}",
+    messagingSenderId: "{PUSH_FIREBASE_MESSAGING_SENDER_ID}"
+  };
+  firebase.initializeApp(config);
+  var firebase_phpbb_user_id = '{PUSH_FIREBASE_USER_ID}';
+  var firebase_user_url = '{PUSH_FIREBASE_USER_URL}';
+</script>
+<!-- INCLUDEJS push.js -->

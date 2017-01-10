@@ -1,0 +1,30 @@
+{
+	"name": "imkingdavid/push",
+	"type": "phpbb-extension",
+	"description": "An extension for phpBB 3.1 that will add desktop and push (mobile) notifications (via Chrome) to your board.",
+	"homepage": "http://www.github.com/imkingdavid/push",
+	"version": "1.0.0",
+	"time": "2017-01-09",
+	"keywords": ["phpbb", "extension", "push", "notifications"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "David King (imkingdavid)",
+			"email": "imkingdavid@gmail.com",
+			"homepage": "http://www.thedavidking.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.4"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Push Notifications for phpBB",
+		"soft-require": {
+			"phpbb/phpbb": "3.2.*@dev"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+'use strict';
+importScripts('https://www.gstatic.com/firebasejs/3.6.4/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/3.6.4/firebase-messaging.js');
+
+// Initialize Firebase
+var config = {
+	apiKey: "{PUSH_FIREBASE_API_KEY}",
+	messagingSenderId: "{PUSH_FIREBASE_MESSAGING_SENDER_ID}"
+};
+firebase.initializeApp(config);
+
+const messaging = firebase.messaging();

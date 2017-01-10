@@ -1,0 +1,13 @@
+push.manifest:
+    path: /push/manifest.json
+    defaults: { _controller: push.controller:manifest }
+
+push.service_worker:
+    # /firebase-messaging-sw.js is the required filename and path
+    # for FCM to work
+    path: /firebase-messaging-sw.js
+    defaults: { _controller: push.controller:service_worker }
+
+push.register_user:
+    path: /push/register_user
+    defaults: { _controller: push.controller:register_user }
